@@ -29,6 +29,7 @@ class HomeFragment : Fragment() {
     ): View? {
         val binding = FragmentHomeBinding.inflate(inflater)
 
+
         viewModel.llistar_mobles(requireContext())
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
 

@@ -21,12 +21,20 @@
         android:id="@+id/insertFragment"
         android:name="com.example.examennadirelhaidouri.Fragments.InsertFragment"
         android:label="fragment_insert"
-        tools:layout="@layout/fragment_insert" />
+        tools:layout="@layout/fragment_insert" >
+        <action
+            android:id="@+id/action_insertFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/crudFragment"
         android:name="com.example.examennadirelhaidouri.Fragments.CrudFragment"
         android:label="fragment_crud"
-        tools:layout="@layout/fragment_crud" />
+        tools:layout="@layout/fragment_crud" >
+        <action
+            android:id="@+id/action_crudFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/contacteFragment"
         android:name="com.example.examennadirelhaidouri.Fragments.ContacteFragment"

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.examennadirelhaidouri.R
 import com.example.examennadirelhaidouri.Room.Mobles
 import com.example.examennadirelhaidouri.ViewModel.HomeFragmentViewModel
@@ -33,6 +34,7 @@ class InsertFragment : Fragment() {
             if (nom.isNotEmpty() && preu.isNotEmpty()) {
                 viewModel.afegirMoble(requireContext(), Mobles(nom, preu.toFloat()))
                 Toast.makeText(requireContext(), "Moble creat correctament", Toast.LENGTH_LONG).show()
+                findNavController().navigate(R.id.action_insertFragment_to_homeFragment)
 
             }
             else {

@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.examennadirelhaidouri.R
 import com.example.examennadirelhaidouri.SharedViewModel
 import com.example.examennadirelhaidouri.ViewModel.CrudFragmentViewModel
@@ -33,11 +35,16 @@ class CrudFragment : Fragment() {
 
         binding.buttonDel.setOnClickListener {
             viewModel.eliminarMoble(requireContext(), moble?.Id.toString().toLong())
+            Toast.makeText(requireContext(), "Moble eliminat", Toast.LENGTH_LONG).show()
+            findNavController().navigate(R.id.action_crudFragment_to_homeFragment)
         }
 
         binding.buttonUpd.setOnClickListener {
             if (moble != null) {
                 viewModel.modificatMoble(requireContext(), binding.editTextNom.text.toString(), binding.editTextPreu.text.toString().toFloat(), moble?.Id.toString().toLong())
+                Toast.makeText(requireContext(), "Moble actualitzat", Toast.LENGTH_LONG).show()
+                findNavController().navigate(R.id.action_crudFragment_to_homeFragment)
+
             }
         }
 

@@ -24,7 +24,7 @@ private val itemClickListener: (Mobles) -> Unit
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mList[position]
 
-
+        holder.imageView.setImageResource(R.drawable.ic_launcher_foreground)
         holder.textViewNom.text = item.nom
         holder.textViewPreu.text = item.preu.toString() + "€"
 
@@ -41,6 +41,7 @@ private val itemClickListener: (Mobles) -> Unit
     }
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
+        val imageView: ImageView = itemView.findViewById(R.id.imageView)
         val textViewNom: TextView = itemView.findViewById(R.id.Nom)
         val textViewPreu: TextView = itemView.findViewById(R.id.Preu)
     }
