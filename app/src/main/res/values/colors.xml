@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="bottom_nav_background">#B3D4ED</color>
+    <color name="bottom_nav_item">#8B8282</color>
+    <color name="bottom_nav_selected_item">#0E0E0E</color>
+    <color name="fragmentbg_color">#FFFFFF</color>
 </resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.examennadirelhaidouri.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_insertFragment"
+            app:destination="@id/insertFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_crudFragment"
+            app:destination="@id/crudFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertFragment"
+        android:name="com.example.examennadirelhaidouri.Fragments.InsertFragment"
+        android:label="fragment_insert"
+        tools:layout="@layout/fragment_insert" />
+    <fragment
+        android:id="@+id/crudFragment"
+        android:name="com.example.examennadirelhaidouri.Fragments.CrudFragment"
+        android:label="fragment_crud"
+        tools:layout="@layout/fragment_crud" />
+    <fragment
+        android:id="@+id/contacteFragment"
+        android:name="com.example.examennadirelhaidouri.Fragments.ContacteFragment"
+        android:label="fragment_contacte"
+        tools:layout="@layout/fragment_contacte" />
+</navigation>

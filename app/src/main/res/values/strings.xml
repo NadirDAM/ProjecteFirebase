@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ExamenNadirElHaidouri</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="el_meu_contacte_s_672192832">El meu contacte és: 672192832.</string>
+    <string name="nav_open">Obert</string>
+    <string name="nav_close">Tancat</string>
 </resources>
