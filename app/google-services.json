@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624646780669",
+    "project_id": "projectefirebase-ddd18",
+    "storage_bucket": "projectefirebase-ddd18.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624646780669:android:b3389139b50f28f69df094",
+        "android_client_info": {
+          "package_name": "com.example.examennadirelhaidouri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATYNuewiW51FkYe65KlkvQMjr5xsVqJ2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

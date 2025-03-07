@@ -1,9 +1,6 @@
 package com.example.examennadirelhaidouri
 
-import android.content.Context
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.example.examennadirelhaidouri.Room.Mobles
 
 class SharedViewModel : ViewModel() {
 

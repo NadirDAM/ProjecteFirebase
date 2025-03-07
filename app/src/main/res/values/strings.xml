@@ -5,4 +5,10 @@
     <string name="el_meu_contacte_s_672192832">El meu contacte és: 672192832.</string>
     <string name="nav_open">Obert</string>
     <string name="nav_close">Tancat</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="anar_a_login">Anar a Login</string>
+    <string name="click_here_to_reset_password">Click here to reset password.</string>
 </resources>

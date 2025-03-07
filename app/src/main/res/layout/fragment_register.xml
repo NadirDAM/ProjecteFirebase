@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.RegisterFragment">
+
+    <ImageView
+        android:id="@+id/imageViewRegister"
+        android:layout_width="396dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFielUser"
+        android:layout_width="233dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="350dp"
+        android:hint="@string/user"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRegister"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRegister"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRegister"
+        tools:ignore="MissingConstraints"
+        app:startIconContentDescription="">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFielPassword"
+        android:layout_width="233dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="70dp"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/textFielUser"
+        app:layout_constraintStart_toStartOf="@+id/textFielUser"
+        app:layout_constraintTop_toTopOf="@+id/textFielUser"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/outlinedButtonRegister"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/marron"
+        app:layout_constraintEnd_toEndOf="@+id/textFielPassword"
+        app:layout_constraintStart_toStartOf="@+id/textFielPassword"
+        app:layout_constraintTop_toTopOf="@+id/textFielPassword"
+        />
+
+    <Button
+        android:id="@+id/outlinedButtonGoToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/outlinedButtonRegister"
+        app:layout_constraintStart_toStartOf="@+id/outlinedButtonRegister"
+        app:layout_constraintTop_toTopOf="@+id/outlinedButtonRegister"
+        android:text="@string/anar_a_login"
+        android:textColor="@color/black"
+        style="?attr/materialButtonOutlinedStyle"
+        />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/outlinedButtonGoToRegister"
+        app:layout_constraintStart_toStartOf="@+id/outlinedButtonGoToRegister"
+        app:layout_constraintTop_toTopOf="@+id/outlinedButtonGoToRegister"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

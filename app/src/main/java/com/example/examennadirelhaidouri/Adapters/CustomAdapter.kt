@@ -7,11 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.examennadirelhaidouri.R
-import com.example.examennadirelhaidouri.Room.Mobles
+import com.example.examennadirelhaidouri.Mobles
 
 class CustomAdapter(
-private val mList: List<Mobles>,
-private val itemClickListener: (Mobles) -> Unit
+    private val mList: List<Mobles>,
+    private val itemClickListener: (Mobles) -> Unit
 ) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
